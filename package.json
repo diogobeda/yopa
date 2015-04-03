@@ -1,0 +1,22 @@
+{
+  "name": "yopa",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node_modules/react-native/packager/packager.sh",
+    "webpack": "webpack --config webpack.config.js --colors --progress"
+  },
+  "dependencies": {
+    "babel-core": "^5.0.2",
+    "babel-runtime": "^5.0.2",
+    "ramda": "^0.13.0",
+    "randomcolor": "^0.2.0",
+    "react-native": "^0.3.4"
+  },
+  "devDependencies": {
+    "anybar-webpack": "^1.0.5",
+    "babel-core": "^5.0.2",
+    "babel-loader": "^5.0.0",
+    "webpack": "^1.7.3"
+  }
+}
