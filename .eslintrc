@@ -1,0 +1,25 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+
+  "ecmaFeatures": {
+    "jsx": true
+  },
+
+  "rules": {
+    "strict": 0,
+    "quotes": "single",
+    "no-console": 0,
+    "no-use-before-define": 0,
+    "react/jsx-uses-vars": 1
+  },
+
+  "globals": {
+    "console": false,
+    "setTimeout": false,
+    "ENV": false,
+    "document": false
+  }
+}

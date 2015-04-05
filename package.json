@@ -4,19 +4,26 @@
   "private": true,
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh",
-    "webpack": "webpack --config webpack.config.js --colors --progress"
+    "webpack": "NODE_ENV=development webpack --config webpack.config.js --colors --progress"
   },
   "dependencies": {
     "babel-core": "^5.0.2",
     "babel-runtime": "^5.0.2",
+    "firebase": "^2.2.3",
+    "json-loader": "^0.5.1",
     "ramda": "^0.13.0",
     "randomcolor": "^0.2.0",
-    "react-native": "^0.3.4"
+    "react-native": "^0.3.4",
+    "reflux": "^0.2.7"
   },
   "devDependencies": {
     "anybar-webpack": "^1.0.5",
     "babel-core": "^5.0.2",
+    "babel-eslint": "^2.0.2",
     "babel-loader": "^5.0.0",
+    "eslint": "^0.18.0",
+    "eslint-loader": "^0.9.0",
+    "eslint-plugin-react": "^2.0.2",
     "webpack": "^1.7.3"
   }
 }

@@ -11,9 +11,15 @@ module.exports = {
     libraryTarget: 'commonjs'
   },
 
+  eslint: {
+    configFile: path.join(__dirname, '.eslintrc')
+  },
+
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader?optional=runtime'] }
+      { test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader?optional=runtime'] },
+      { test: /\.js$/, exclude: /node_modules/, loader: 'eslint-loader' },
+      { test: /\.json$/, exclude: /node_modules/, loader: 'json-loader' }
     ]
   },
 
@@ -22,6 +28,7 @@ module.exports = {
   ],
 
   plugins: [
+    new webpack.DefinePlugin({ ENV: JSON.stringify('development') }),
     new webpack.NoErrorsPlugin(),
     new AnyBarWebpackPlugin()
   ]

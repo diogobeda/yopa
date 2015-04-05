@@ -1,2 +1,4 @@
 node_modules/
 index.ios.js
+npm-debug.log
+secrets.json

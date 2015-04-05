@@ -1,8 +1,7 @@
 import React from 'react-native';
-import YopaList from './YopaList';
+import {YopaList, AddFriendButton} from './';
 let {
   ScrollView,
-  Text,
   StyleSheet,
   StatusBarIOS
 } = React;
@@ -15,6 +14,7 @@ let Home = React.createClass({
     return (
       <ScrollView style={styles.container}>
         <YopaList />
+        <AddFriendButton style={styles.addFriendButton} />
       </ScrollView>
     );
   }
